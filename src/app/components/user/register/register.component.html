@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Register</h1>
+
+    <input [(ngModel)]="username"
+           type="text"
+           name="username"
+           placeholder="Username"
+           class="form-control">
+    <input [(ngModel)]="password"
+           type="password"
+           name="password"
+           placeholder="Password"
+           class="form-control">
+    <input [(ngModel)]="verified"
+           type="password"
+           name="verify"
+           placeholder="Verify Password"
+           class="form-control">
+    <button type="submit"
+            name="register"
+            class="btn btn-primary btn-block"
+            (click)="toProfile()">Register</button>
+
+      <button type="button"
+              name="cancel"
+              class="btn btn-danger btn-block"
+              (click)="toLogin()">Cancel</button>
+
+</div>

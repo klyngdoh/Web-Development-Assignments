@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" type="text/css" href="user_pages.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <script src="user_pages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+<ul id="profile_navbar">
+  <li><a class="left-align" href="#">Profile</a></li>
+  <li><a class="right-align" href="#" onclick="goToProfile()"><span class="glyphicon glyphicon-ok white"></span></a></li>
+</ul>
+<form>
+  <p class="field_title">Username</p>
+    <input type="text" name="profile_uid" value="klyngdoh" class="profile_text">
+    <br>
+    <p class="field_title">Email</p>
+    <input type="email" name="profile_email" value="klyngdoh@gmail.com" class="profile_text">
+    <br>
+    <p class="field_title">First Name</p>
+    <input type="text" name="profile_fname" value="Kenneth" class="profile_text">
+    <br>
+    <p class="field_title">Last Name</p>
+    <input type="text" name="profile_lname" value="Lyngdoh" class="profile_text">
+    <br>
+    <input type="button" name="profile_web" value="Websites" class="blue_button" onclick="goToWebsiteList()">
+    <br>
+    <input type="button" name="profile_logout" value="Logout" class="red_button" onclick="goToLogin()">
+</form> <br><br><br>
+<ul id="profile_navbar_btm">
+  <li><a class="right-align" href="#"><span class="glyphicon glyphicon-user white"></span></a></li>
+</ul>
+
+</div>
+</body>
+</html>

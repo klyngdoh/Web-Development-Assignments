@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="user_pages.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="user_pages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+<p id="page_title">Register</p>
+<form>
+    <input type="text" name="reg_uid" placeholder=" Username" class="input_text">
+    <br>
+    <input type="password" name="reg_pwd" placeholder=" Password" class="input_text">
+    <br>
+    <input type="password" name="reg_verify" placeholder=" Verify Password" class="input_text">
+    <br>
+    <button type="button" name="reg" class="blue_button" onclick="goToProfile()">Register</button>
+    <br>
+    <button type="button" name="reg_cancel" class="red_button" onclick="goToLogin()">Cancel</button>
+</form>
+</div>
+</body>
+</html>

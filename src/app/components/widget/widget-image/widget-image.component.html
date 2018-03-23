@@ -1,0 +1,67 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a  class="nav-link" (click)="toWidgetList()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text black mr-auto">Edit Widget</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toWidgetList()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <br><br><br>
+
+  <form>
+    <label for="imagename">Image Name</label>
+    <input [(ngModel)]="imagename"
+           type="text"
+           name="imagename"
+           placeholder="Image Name"
+           class="form-control"
+           id="imagename">
+    <label for="imagetext">Image Text</label>
+    <input [(ngModel)]="imagetext"
+           type="text"
+           name="imagetext"
+           placeholder="Image Text"
+           class="form-control"
+           id="imagetext">
+    <label for="imageurl">Image URL</label>
+    <input [(ngModel)]="imageurl"
+           type="text"
+           name="imageurl"
+           placeholder="Image URL"
+           class="form-control"
+           id="imageurl">
+    <label for="width">Width</label>
+    <input [(ngModel)]="imagewidth"
+           type="text"
+           name="width"
+           placeholder="Image Width"
+           class="form-control"
+           id="width">
+    <label for="upload">Upload</label>
+    <input type="file"
+           name="upload"
+           class="form-control"
+           id="upload">
+     <a  (click)="toWidgetList()">
+      <button type="button" class="btn btn-primary btn-block">Upload Image</button></a>
+     <a  (click)="toWidgetList()">
+      <button type="button" class="btn btn-danger btn-block">Delete</button></a>
+  </form>
+
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user blue"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

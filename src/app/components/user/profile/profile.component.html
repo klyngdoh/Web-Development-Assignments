@@ -1,0 +1,61 @@
+<div class="container">
+
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+      <span class="navbar-text white">Profile</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <br><br><br>
+
+  <form>
+    <label for="username">Username</label>
+    <input [(ngModel)]="username"
+           type="text"
+           class="form-control"
+           name = "username"
+           id="username"
+           placeholder = "Username">
+    <label for="email">Email</label>
+    <input [(ngModel)]="email"
+           type="email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder = "Email">
+    <label for="firstname">First Name</label>
+    <input [(ngModel)]="firstName"
+           type="text"
+           name="firstName"
+           id="firstname"
+           class="form-control"
+           placeholder="First Name">
+    <label for="lastname">Last Name</label>
+    <input [(ngModel)]="lastName"
+           type="text"
+           name="lastName"
+           id="lastname"
+           class="form-control"
+           placeholder="Last Name">
+
+      <button type="button"
+              name="profile_web"
+              (click)="toWebsites()"
+              class="btn btn-primary btn-block">Websites</button>
+
+
+      <button type="button"
+              name="profile_logout"
+              class="btn btn-danger btn-block"
+              (click)="toLogin()">Logout</button>
+  </form>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  (click)="toProfile()" class="nav-link" ><span class="glyphicon glyphicon-user"></span></a>
+      </li>
+    </ul>
+  </nav>
+</div>

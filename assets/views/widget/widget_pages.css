@@ -1,0 +1,150 @@
+.content {
+  max-width: 360px;
+  margin: auto;
+  padding: 0px;
+}
+
+.widget_navbar {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.widget_list {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.right-align {
+  float:right;
+}
+
+.left-align {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+li a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+.bottom-align {
+  bottom: 0;
+}
+
+.blue {
+  color: dodgerblue;
+}
+
+td a {
+  text-decoration: none;
+  color: dodgerblue;
+  padding: 10px 30px;
+  font-family: Verdana;
+}
+
+.field_title {
+  font-family: Verdana;
+  margin: 5px 30px 0px;
+}
+
+.widget_text {
+  width: 300px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 5px;
+  margin: 1px 30px 1px;
+  font-family: Verdana;
+}
+
+.widget_file {
+  width: 300px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 5px;
+  padding: 1px 15px;
+  margin: 1px 30px 1px;
+  font-family: Verdana;
+}
+
+.red_button {
+  background-color: tomato;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 20px 30px 1px;
+  font-family: Verdana;
+}
+
+.blue_button {
+  background-color: dodgerblue;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 20px 30px 1px;
+  font-family: Verdana;
+}
+
+
+.red_button_bottom {
+  background-color: tomato;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 1px 30px;
+  font-family: Verdana;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+.widget_setting {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index:10;
+}
+
+.youtube {
+  position: relative;
+  z-index:1;
+}
+
+.youtube_wrapper {
+  position: relative;
+}
+
+.heading_wrapper {
+  position: relative;
+}

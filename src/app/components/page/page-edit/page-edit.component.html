@@ -1,0 +1,48 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a  class="nav-link" (click)="toPageList()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text black mr-auto">Edit Page</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  class="nav-link" (click)="toPageList()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <br><br><br>
+
+  <form>
+    <label for="pagename">Page Name</label>
+    <input [(ngModel)]="pagename"
+           type="text"
+           name="pagename"
+           placeholder="Page Name"
+           class="form-control"
+           id="pagename">
+    <label for="title">Title</label>
+    <input [(ngModel)]="description"
+           type="text"
+           name="title"
+               placeholder="Title"
+               class="form-control"
+               id="title">
+
+      <button type="button"
+              (click)="toPageList()"
+              class="btn btn-danger btn-block">Delete</button>
+  </form>
+
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user blue"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

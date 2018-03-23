@@ -1,0 +1,48 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a  class="nav-link" (click)="toWebsiteList()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text white mr-auto">New Website</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toWebsiteList()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <br><br><br>
+  <div class="row">
+    <div class="col-lg-2 d-none d-lg-inline"><ul class="list-group">
+      <li class="list-group-item" *ngFor="let ws of websites">
+         <a  class="float-left" (click)="toPageList(ws._id)">{{ws.name}}</a>
+         <a  class="float-right" (click)="toEditWebsite(ws._id)">
+          <span class="glyphicon glyphicon-cog"></span>
+        </a></li>
+    </ul></div>
+    <div class="col-lg-10">
+      <form>
+        <label for="sitename">Website Name</label>
+        <input type="text"
+               name="sitename"
+               placeholder=" Website Name"
+               class="form-control"
+               id="sitename">
+        <label for="description">Website Description</label>
+        <textarea  name="description"
+                   placeholder="Website Description"
+                   class="form-control"
+                   id="description"></textarea>
+      </form>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

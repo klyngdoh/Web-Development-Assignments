@@ -1,0 +1,38 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a  class="nav-link" (click)="toPageList()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text black mr-auto">New Page</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  class="nav-link" (click)="toPageList()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <br><br><br>
+      <form>
+        <label for="pagename">Page Name</label>
+        <input type="text"
+               name="pagename"
+               placeholder="Page Name"
+               class="form-control"
+               id="pagename">
+        <label for="description">Page Title</label>
+        <input  type="text"
+                name="description"
+                   placeholder="Page Title"
+                   class="form-control"
+                   id="description">
+      </form>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user blue"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

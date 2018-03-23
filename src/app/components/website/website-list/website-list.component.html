@@ -1,0 +1,30 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text white mr-auto">Websites</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toNewWebsite()"><span class="glyphicon glyphicon-plus"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <br><br><br>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let ws of websites">
+       <a  class="float-left" (click)="toPageList(ws._id)">{{ws.name}}</a>
+       <a  class="float-right" (click)="toEditWebsite(ws._id)">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-bottom">
+  <ul class="navbar-nav ml-auto">
+    <li class = "nav-item active">
+       <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user"></span></a>
+    </li>
+  </ul>
+</nav>
+</div>

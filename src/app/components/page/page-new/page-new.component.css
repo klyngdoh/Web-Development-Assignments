@@ -1,0 +1,16 @@
+.black {
+  color:black
+}
+
+.blue {
+  color: royalblue;
+}
+
+.list-group-item {
+  border:none;
+}
+
+.clickable {
+  cursor: pointer;
+  color: dodgerblue;
+}

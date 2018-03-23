@@ -1,0 +1,54 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a  class="nav-link" (click)="toWidgetList()">
+          <span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text black mr-auto">Edit Widget</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toWidgetList()"><span class="glyphicon glyphicon-ok"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <br><br><br>
+
+  <form>
+    <label for="headername">Headier Name</label>
+    <input [(ngModel)]="headername"
+           type="text"
+           name="headername"
+           placeholder="Header Name"
+           class="form-control"
+           id="headername">
+    <label for="headertext">Header Text</label>
+    <input [(ngModel)]="headertext"
+           type="text"
+           name="headertext"
+           placeholder="Header Text"
+           class="form-control"
+           id="headertext">
+    <label for="size">Header Size</label>
+    <input [(ngModel)]="headersize"
+           type="number"
+           name="size"
+           placeholder="Size"
+           class="form-control"
+           id="size">
+
+      <button type="button" class="btn btn-danger btn-block" (click)="toWidgetList()">Delete</button>
+  </form>
+
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user blue"></span></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

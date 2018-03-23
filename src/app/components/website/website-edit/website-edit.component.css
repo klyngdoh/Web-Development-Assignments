@@ -1,0 +1,21 @@
+.white {
+  color:white;
+}
+
+.list-group-item {
+  border:none;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+button {
+  margin-bottom: 8px;
+}
+
+
+.clickable {
+  cursor: pointer;
+  color: dodgerblue;
+}

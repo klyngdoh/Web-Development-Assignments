@@ -1,0 +1,46 @@
+.black {
+  color:black;
+  margin-right: 10px;
+}
+
+.blue {
+  color: deepskyblue;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+button {
+  margin-bottom: 8px;
+}
+
+.widget-settings {
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  padding: 1px;
+  opacity: 0.5;
+  top: 0px;
+}
+
+.widget_setting {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index:10;
+  background-color: lightgrey;
+  border-bottom-left-radius: 5px;
+  opacity: 0.4;
+}
+
+.widget-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.clickable {
+  cursor: pointer;
+  color: dodgerblue;
+}

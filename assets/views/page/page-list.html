@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page List</title>
+  <link rel="stylesheet" type="text/css" href="page_pages.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <script src="page_pages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+  <ul class="page_navbar">
+    <li><a class="left-align" href="#" onclick="goToWebsiteList()"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+    <li><a class="left-align" href="#">Pages</a></li>
+    <li><a class="right-align" href="#" onclick="goToNewPage()"><span class="glyphicon glyphicon-plus"></span></a></li>
+  </ul>
+  <table class="page_list">
+    <tr><td><a class="left-align blue" href="#" onclick="goToWidgetList()">Page Link 1</a></td>
+    <td><a class="right-align blue glyphicon glyphicon-cog" href="#" onclick="goToEditPage()"></a></td></tr>
+    <tr><td><a class="left-align blue" href="#" onclick="goToWidgetList()">Page Link 2</a></td>
+    <td><a class="right-align blue glyphicon glyphicon-cog" href="#" onclick="goToEditPage()"></a></td></tr>
+  </table><br><br><br>
+  <ul class="page_navbar bottom-align">
+    <li><a class="right-align" href="#" onclick="goToProfile()"><span class="glyphicon glyphicon-user blue"></span></a></li>
+  </ul>
+
+</div>
+
+</body>
+</html>

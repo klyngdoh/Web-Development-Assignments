@@ -1,0 +1,52 @@
+Quiz 2:
+Name: Kenneth Lyngdoh
+CCIS: klyngdoh
+Date: 21 Feb 2018
+
+Buttons:
+
+1. <button type="button" class ="btn btn-dark">Dark button</button>
+
+2. <button type="button" class="btn btn-outline-danger">White button, red border</button>
+
+3. <button type="button" class="btn btn-danger disabled">Red disabled button</button>
+
+Forms:
+
+1. 	<form>
+		<input type="email" class="form-control">
+		<input type="password" class="form-control>
+	</form>
+	
+2. 	<form class="form-inline">
+		<input type="text" class="form-control">
+	</form>
+	
+3. 	<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+
+Grid:
+
+1.	<div class="row">
+		<div class="col-sm-4">Col 1</div>
+		<div class="col-sm-4">Col 2</div>
+		<div class="col-sm-4">Col 3</div>
+	</div>
+	
+2.	<div class="row">
+		<div class="col-sm-3">Col 1 (25%)</div>
+		<div class="col-sm-9">Col 2 (75%)</div>
+	</div> 
+	
+Angular:
+
+1. A controller is a JavaScript object that contains attributes and functions. It controls a given application or module and its data, as given by its $scope parameter.
+
+2. ng-app="AppName"
+
+3. Yes
+
+4. ng-bind tells AngularJS to replace the content of an HTML element with the value of a given expression or variable.
+
+5. $scope is the application object, which contains its variables and functions.
+
+6. The ngRoute module is required for routing.

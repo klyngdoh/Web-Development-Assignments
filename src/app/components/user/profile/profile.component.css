@@ -1,0 +1,17 @@
+input {
+  margin-bottom: 8px;
+}
+
+button {
+  margin-bottom: 8px;
+}
+
+.white {
+  color:white;
+}
+
+
+.clickable {
+  cursor: pointer;
+  color: dodgerblue;
+}

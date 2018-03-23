@@ -1,0 +1,70 @@
+
+
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a  class="nav-link" (click)="toPageList()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      </li>
+    </ul>
+    <span class="navbar-text black mr-auto">Widgets</span>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toWidgetChooser()"><span class="glyphicon glyphicon-plus"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <br><br><br>
+
+  <div *ngFor="let widget of widgets">
+      <div [ngSwitch]="widget.widgetType">
+         <a class="float-right widget-settings" (click)="toEditWidget(widget._id)"><span class="glyphicon glyphicon-cog blue"></span></a>
+      <div *ngSwitchCase="'HTML'" innerHTML={{widget.text}}>
+      </div>
+      <div *ngSwitchCase="'IMAGE'">
+      <img src={{widget.url}}>
+      </div>
+      <div *ngSwitchCase="'YOUTUBE'">
+        <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(widget.url)' frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div *ngSwitchCase="'HEADING'">
+        <div [ngSwitch]="widget.size">
+          <div *ngSwitchCase="1">
+            <h1>{{widget.text}}</h1>
+          </div>
+          <div *ngSwitchCase="2">
+            <h2>{{widget.text}}</h2>
+          </div>
+          <div *ngSwitchCase="3">
+            <h3>{{widget.text}}</h3>
+          </div>
+          <div *ngSwitchCase="4">
+            <h4>{{widget.text}}</h4>
+          </div>
+          <div *ngSwitchCase="5">
+            <h5>{{widget.text}}</h5>
+          </div>
+          <div *ngSwitchCase="6">
+            <h6>{{widget.text}}</h6>
+          </div>
+        </div>
+
+    </div>
+
+      </div>
+
+    <hr>
+
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item disabled black"><span class="glyphicon glyphicon-play"></span></li>
+    <li class="nav-item disabled black"><span class="glyphicon glyphicon-eye-open"></span></li></ul>
+    <ul class="navbar-nav ml-auto">
+      <li class = "nav-item active">
+         <a  class="nav-link" (click)="toProfile()"><span class="glyphicon glyphicon-user blue"></span></a>
+      </li>
+    </ul>
+  </nav>
+</div>

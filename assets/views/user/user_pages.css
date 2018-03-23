@@ -1,0 +1,113 @@
+.content {
+  max-width: 300px;
+  margin: auto;
+  padding: 0px;
+}
+
+#page_title {
+  font-size: 20px;
+  font-family: Verdana;
+  margin: 5px 0px;
+}
+
+.field_title {
+  font-family: Verdana;
+  margin: 0px;
+}
+
+.white {
+  color:white;
+}
+
+.right-align {
+  float:right;
+}
+
+.left-align {
+  float:left;
+}
+
+#profile_navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue;
+}
+
+#profile_navbar_btm {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue;
+}
+
+a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+.input_text {
+  width: 300px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 5px;
+  margin: 1px;
+  font-family: Verdana;
+}
+
+.profile_text {
+  width: 300px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 5px;
+  margin: 1px 1px 10px;
+  font-family: Verdana;
+}
+
+.blue_button {
+  background-color: cornflowerblue;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 1px;
+  font-family: Verdana;
+}
+
+.red_button {
+  background-color: tomato;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 1px;
+  font-family: Verdana;
+}
+
+.green_button {
+  background-color: limegreen;
+  color: white;
+  width: 300px;
+  height: 30px;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 1px;
+  font-family: Verdana;
+}

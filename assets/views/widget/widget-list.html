@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page List</title>
+  <link rel="stylesheet" type="text/css" href="widget_pages.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <script src="widget_pages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+  <ul class="widget_navbar">
+    <li><a class="left-align" href="#" onclick="goToPageList()"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+    <li><a class="left-align" href="#">Widgets</a></li>
+    <li><a class="right-align" href="#" onclick="goToWidgetChoose()"><span class="glyphicon glyphicon-plus"></span></a></li>
+  </ul>
+  <div class="heading_wrapper">
+  <h2>This is a heading.</h2>
+    <a class="widget_setting" href="#" onclick="goToWidgetHeading()"><span class="glyphicon glyphicon-cog"></span></a>
+  </div><hr>
+  <div class="image_wrapper" width="360" height="271.4">
+    <img src="HTML.jpg" width="360" height="271.4" class="image">
+    <a class="widget_setting" href="#" onclick="goToWidgetImage()"><span class="glyphicon glyphicon-cog"></span></a>
+  </div><hr>
+  <div class="youtube_wrapper" width="360" height="202.5">
+  <iframe class="youtube" width="360" height="202.5" src="https://www.youtube.com/embed/6T8stXj7Dzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <a class="widget_setting" href="#" onclick="goToWidgetYoutube()"><span class="glyphicon glyphicon-cog"></span></a>
+  </div><hr>
+  <ul class="widget_navbar bottom-align">
+    <li><a class="left-align" href="#"><span class="glyphicon glyphicon-play"></span></a></li>
+    <li><a class="left-align" href="#"><span class="glyphicon glyphicon-eye-open"></span></a></li>
+    <li><a class="right-align" href="#" onclick="goToProfile()"><span class="glyphicon glyphicon-user blue"></span></a></li>
+  </ul>
+
+</div>
+
+</body>
+</html>
